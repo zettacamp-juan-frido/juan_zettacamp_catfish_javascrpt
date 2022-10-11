@@ -39,16 +39,18 @@ for (let i = 0; i <= buy.length; i++) {
 // }
 
 // function price() {
-//   for (let i = 0; i <= stock.length; i++) {
-//     if (i < buy) {
-//       console.log(stock[i]);
+//   for (let i = 0; i <= buy.length; i++) {
+//     if (i < stock) {
+//       console.log(buy[i]);
 //       priceBook += book;
 //       discount = priceBook * amDiscount;
 //       total = discount + amTax;
 //       return total;
+//       // console.log(total);
 //     } else {
 //       const alert = "Out off stock";
 //       return alert;
+//       // console.log(alert);
 //     }
 //   }
 // }
