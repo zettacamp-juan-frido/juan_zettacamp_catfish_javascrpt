@@ -1,5 +1,5 @@
 let book = 60000;
-let amDiscount = 5.0;
+let amDiscount = 0.5;
 let amTax = 2000;
 let buy = 10;
 
@@ -27,8 +27,8 @@ const stock = [bookStock];
 if (buy <= bookStock) {
   for (let i = 0; i <= stock.length; i++) {
     price = book * buy;
-    discount = price / amDiscount;
-    total = discount - amTax;
+    discount = price * amDiscount;
+    total = discount + amTax;
   }
   console.log(total);
 } else {
