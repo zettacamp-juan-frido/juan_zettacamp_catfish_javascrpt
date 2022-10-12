@@ -106,4 +106,4 @@ function buyBooks(bookName, totalBuy) {
 }
 
 let buy = buyBooks("Buku Z", 11);
-console.log(buy);
+console.log(buy); // total price
