@@ -84,6 +84,7 @@ function groupGendre(genre) {
   let genreList = song.filter((element) => element.genre == genre);
   return genreList;
 }
+
 // let genree = groupGendre("EDM");
 // console.log(genree);
 
@@ -91,18 +92,16 @@ function Duration(duration) {
   let listSong = [];
   let durasi = 0;
   for (const a of song) {
-    if (a.duration < duration) {
-      listSong.push(a);
-      durasi += a.duration;
-    }
+    durasi = durasi + a.duration;
     if (durasi > duration) {
       break;
     } else {
+      listSong.push(a);
       continue;
     }
   }
   return { listSong, durasi };
 }
 
-let durasi = Duration(60);
-console.log(durasi);
+let durasii = Duration(60);
+console.log(durasii);
